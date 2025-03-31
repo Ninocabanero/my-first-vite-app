@@ -1,0 +1,137 @@
+.deals-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  padding-top: 80px;
+}
+
+.deals-content {
+  padding: 40px 0;
+}
+
+.deals-content h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.deals-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 30px;
+}
+
+.deal-card {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+  position: relative;
+}
+
+.deal-card:hover {
+  transform: translateY(-5px);
+}
+
+.deal-badge {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: #dc3545;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-weight: bold;
+  z-index: 1;
+}
+
+.deal-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.deal-info {
+  padding: 20px;
+}
+
+.deal-info h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.location {
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.price-info {
+  margin-bottom: 15px;
+}
+
+.original-price {
+  text-decoration: line-through;
+  color: #666;
+  margin-right: 10px;
+}
+
+.discounted-price {
+  font-size: 1.5rem;
+  color: #28a745;
+  font-weight: bold;
+}
+
+.per-night {
+  color: #666;
+  margin-left: 5px;
+}
+
+.deal-description {
+  color: #666;
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.deal-features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.deal-features span {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.deal-features i {
+  color: #007bff;
+}
+
+.book-button {
+  background-color: #28a745;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 100%;
+}
+
+.book-button:hover {
+  background-color: #218838;
+}
+
+@media (max-width: 768px) {
+  .deals-grid {
+    grid-template-columns: 1fr;
+  }
+} 
