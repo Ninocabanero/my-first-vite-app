@@ -139,23 +139,6 @@
   background-color: #0056b3;
 }
 
-/* Map Section */
-.contact-map {
-  text-align: center;
-}
-
-.contact-map h2 {
-  font-size: 2rem;
-  margin-bottom: 30px;
-  color: #333;
-}
-
-.map-container {
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
 /* Responsive Design */
 @media (max-width: 768px) {
   .contact-hero h1 {
